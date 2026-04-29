@@ -164,126 +164,241 @@
     </section>
 
     <!-- Services & Pricing Menu -->
-    <section id="services" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
-                <div>
-                    <h2 class="font-serif text-3xl md:text-4xl text-brand-900 mb-4">Menu Layanan</h2>
-                    <p class="text-brand-700/80">Transparan tanpa biaya tersembunyi. Khusus untukmu.</p>
-                </div>
+    <section id="services" class="py-24 bg-white relative">
+        <!-- Decorative Background Elements -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none opacity-40">
+            <div class="absolute -top-24 -left-24 w-96 h-96 bg-brand-50 rounded-full blur-3xl"></div>
+            <div class="absolute top-1/2 right-0 w-80 h-80 bg-brand-50 rounded-full blur-3xl translate-x-1/2"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <span class="text-brand-500 uppercase tracking-[0.15em] text-xs font-semibold mb-3 block">Transparan & Terjangkau</span>
+                <h2 class="font-serif text-3xl md:text-5xl text-brand-900 mb-4">Menu Layanan</h2>
+                <div class="w-16 h-0.5 bg-brand-300 mx-auto mt-6"></div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-12">
+            <!-- 3 Column Grid for Services -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 <!-- Category 1: Haircut & Styling -->
-                <div>
-                    <h3 class="text-xl font-medium text-brand-900 border-b border-brand-100 pb-3 mb-6 flex items-center gap-2">
-                        <i class="ph ph-scissors text-brand-500"></i> Haircut & Styling
-                    </h3>
-                    <ul class="space-y-4">
-                        <li class="flex justify-between items-baseline">
-                            <div>
-                                <span class="text-brand-900 font-medium">Korean Layer / Wolf Cut</span>
-                                <p class="text-xs text-brand-700/70 mt-1">Termasuk cuci & blow dry aesthetic</p>
+                <div class="bg-white rounded-3xl p-8 border border-brand-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-50 flex items-center justify-center text-brand-700 group-hover:bg-brand-700 group-hover:text-white transition-colors duration-300">
+                            <i class="ph ph-scissors text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif text-brand-900">Haircut & Styling</h3>
+                    </div>
+                    <ul class="space-y-6">
+                        <li class="relative">
+                            <div class="flex items-end justify-between mb-1">
+                                <div class="flex items-center gap-2">
+                                    <span class="text-brand-900 font-medium text-lg">Korean / Wolf Cut</span>
+                                    <span class="bg-brand-900 text-brand-50 text-[9px] px-2 py-0.5 rounded-sm uppercase tracking-wider font-semibold">Hits</span>
+                                </div>
+                                <div class="flex-grow border-b-2 border-dotted border-brand-200 mx-3 relative top-[-6px]"></div>
+                                <span class="text-brand-900 font-serif text-lg">Rp 85k</span>
                             </div>
-                            <span class="text-brand-900 font-serif">Rp 85.000</span>
+                            <p class="text-sm text-brand-700/60">+ Cuci & blow dry aesthetic</p>
                         </li>
-                        <li class="flex justify-between items-baseline">
-                            <div>
-                                <span class="text-brand-900 font-medium">Trim & Basic Haircut</span>
-                                <p class="text-xs text-brand-700/70 mt-1">Rapihkan ujung rambut</p>
+                        <li class="relative">
+                            <div class="flex items-end justify-between mb-1">
+                                <div>
+                                    <span class="text-brand-900 font-medium text-lg">Trim / Basic Cut</span>
+                                </div>
+                                <div class="flex-grow border-b-2 border-dotted border-brand-200 mx-3 relative top-[-6px]"></div>
+                                <span class="text-brand-900 font-serif text-lg">Rp 60k</span>
                             </div>
-                            <span class="text-brand-900 font-serif">Rp 60.000</span>
+                            <p class="text-sm text-brand-700/60">Rapihkan ujung rambut</p>
                         </li>
-                        <li class="flex justify-between items-baseline">
-                            <div>
-                                <span class="text-brand-900 font-medium">Catokan Curly / Iron</span>
-                                <p class="text-xs text-brand-700/70 mt-1">Untuk acara spesial atau hangout</p>
+                        <li class="relative">
+                            <div class="flex items-end justify-between mb-1">
+                                <div>
+                                    <span class="text-brand-900 font-medium text-lg">Catokan Curly/Iron</span>
+                                </div>
+                                <div class="flex-grow border-b-2 border-dotted border-brand-200 mx-3 relative top-[-6px]"></div>
+                                <span class="text-brand-900 font-serif text-lg">Rp 50k</span>
                             </div>
-                            <span class="text-brand-900 font-serif">Rp 50.000</span>
+                            <p class="text-sm text-brand-700/60">Styling awet seharian</p>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Category 2: Color & Chemical -->
-                <div>
-                    <h3 class="text-xl font-medium text-brand-900 border-b border-brand-100 pb-3 mb-6 flex items-center gap-2">
-                        <i class="ph ph-palette text-brand-500"></i> Color & Treatment
-                    </h3>
-                    <ul class="space-y-4">
-                        <li class="flex justify-between items-baseline">
-                            <div>
-                                <span class="text-brand-900 font-medium">Balayage / Ombre</span>
-                                <p class="text-xs text-brand-700/70 mt-1">Teknik gradasi warna natural</p>
+                <div class="bg-white rounded-3xl p-8 border border-brand-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-50 flex items-center justify-center text-brand-700 group-hover:bg-brand-700 group-hover:text-white transition-colors duration-300">
+                            <i class="ph ph-palette text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif text-brand-900">Color & Treatment</h3>
+                    </div>
+                    <ul class="space-y-6">
+                        <li class="relative">
+                            <div class="flex items-end justify-between mb-1">
+                                <div>
+                                    <span class="text-brand-900 font-medium text-lg">Balayage / Ombre</span>
+                                </div>
+                                <div class="flex-grow border-b-2 border-dotted border-brand-200 mx-3 relative top-[-6px]"></div>
+                                <span class="text-brand-900 font-serif text-lg">Mulai 350k</span>
                             </div>
-                            <span class="text-brand-900 font-serif">Start From Rp 350.000</span>
+                            <p class="text-sm text-brand-700/60">Gradasi warna natural</p>
                         </li>
-                        <li class="flex justify-between items-baseline">
-                            <div>
-                                <span class="text-brand-900 font-medium">Hidden Color / Peekaboo</span>
-                                <p class="text-xs text-brand-700/70 mt-1">Warna cerah tersembunyi (termasuk bleach)</p>
+                        <li class="relative">
+                            <div class="flex items-end justify-between mb-1">
+                                <div class="flex items-center gap-2">
+                                    <span class="text-brand-900 font-medium text-lg">Peekaboo Color</span>
+                                    <span class="bg-brand-300 text-brand-900 text-[9px] px-2 py-0.5 rounded-sm uppercase tracking-wider font-semibold">Best</span>
+                                </div>
+                                <div class="flex-grow border-b-2 border-dotted border-brand-200 mx-3 relative top-[-6px]"></div>
+                                <span class="text-brand-900 font-serif text-lg">Mulai 250k</span>
                             </div>
-                            <span class="text-brand-900 font-serif">Start From Rp 250.000</span>
+                            <p class="text-sm text-brand-700/60">Inc. bleach area dalam</p>
                         </li>
-                        <li class="flex justify-between items-baseline">
-                            <div>
-                                <span class="text-brand-900 font-medium">Keratin Smoothing Treatment</span>
-                                <p class="text-xs text-brand-700/70 mt-1">Rambut lurus natural & anti-frizz (tahan 3 bulan)</p>
+                        <li class="relative">
+                            <div class="flex items-end justify-between mb-1">
+                                <div>
+                                    <span class="text-brand-900 font-medium text-lg">Keratin Smoothing</span>
+                                </div>
+                                <div class="flex-grow border-b-2 border-dotted border-brand-200 mx-3 relative top-[-6px]"></div>
+                                <span class="text-brand-900 font-serif text-lg">Mulai 400k</span>
                             </div>
-                            <span class="text-brand-900 font-serif">Start From Rp 400.000</span>
+                            <p class="text-sm text-brand-700/60">Lurus natural anti-frizz</p>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Category 3: Spa & Relaxing -->
-                <div>
-                    <h3 class="text-xl font-medium text-brand-900 border-b border-brand-100 pb-3 mb-6 flex items-center gap-2">
-                        <i class="ph ph-drop text-brand-500"></i> Healing & Spa
-                    </h3>
-                    <ul class="space-y-4">
-                        <li class="flex justify-between items-baseline">
-                            <div>
-                                <span class="text-brand-900 font-medium">Signature Hair Spa</span>
-                                <p class="text-xs text-brand-700/70 mt-1">Pijat relaksasi kepala, leher, bahu + steamer</p>
+                <div class="bg-white rounded-3xl p-8 border border-brand-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-50 flex items-center justify-center text-brand-700 group-hover:bg-brand-700 group-hover:text-white transition-colors duration-300">
+                            <i class="ph ph-drop text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif text-brand-900">Healing & Spa</h3>
+                    </div>
+                    <ul class="space-y-6">
+                        <li class="relative">
+                            <div class="flex items-end justify-between mb-1">
+                                <div class="flex items-center gap-2">
+                                    <span class="text-brand-900 font-medium text-lg">Signature Hair Spa</span>
+                                </div>
+                                <div class="flex-grow border-b-2 border-dotted border-brand-200 mx-3 relative top-[-6px]"></div>
+                                <span class="text-brand-900 font-serif text-lg">Rp 120k</span>
                             </div>
-                            <span class="text-brand-900 font-serif">Rp 120.000</span>
+                            <p class="text-sm text-brand-700/60">Pijat relaksasi + steamer</p>
                         </li>
-                        <li class="flex justify-between items-baseline">
-                            <div>
-                                <span class="text-brand-900 font-medium">Scalp Detox Treatment</span>
-                                <p class="text-xs text-brand-700/70 mt-1">Atasi ketombe dan rambut lepek</p>
+                        <li class="relative">
+                            <div class="flex items-end justify-between mb-1">
+                                <div>
+                                    <span class="text-brand-900 font-medium text-lg">Scalp Detox</span>
+                                </div>
+                                <div class="flex-grow border-b-2 border-dotted border-brand-200 mx-3 relative top-[-6px]"></div>
+                                <span class="text-brand-900 font-serif text-lg">Rp 150k</span>
                             </div>
-                            <span class="text-brand-900 font-serif">Rp 150.000</span>
+                            <p class="text-sm text-brand-700/60">Atasi lepek & ketombe</p>
+                        </li>
+                        <li class="relative">
+                            <div class="flex items-end justify-between mb-1">
+                                <div class="flex items-center gap-2">
+                                    <span class="text-brand-900 font-medium text-lg">Lash Lift + Tint</span>
+                                    <span class="bg-brand-100 text-brand-700 text-[9px] px-2 py-0.5 rounded-sm uppercase tracking-wider font-semibold border border-brand-300">New</span>
+                                </div>
+                                <div class="flex-grow border-b-2 border-dotted border-brand-200 mx-3 relative top-[-6px]"></div>
+                                <span class="text-brand-900 font-serif text-lg">Rp 180k</span>
+                            </div>
+                            <p class="text-sm text-brand-700/60">Lentik natural tanpa extension</p>
                         </li>
                     </ul>
                 </div>
 
-                <!-- Note -->
-                <div class="bg-brand-50 p-6 rounded-xl flex items-start gap-4">
-                    <i class="ph ph-info text-2xl text-brand-500 mt-1"></i>
+            </div>
+            
+            <!-- Floating Note Banner -->
+            <div class="mt-12 bg-gradient-to-r from-brand-900 to-brand-700 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-lg transform hover:scale-[1.01] transition-transform">
+                <div class="flex items-center gap-5 text-white">
+                    <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm flex-shrink-0">
+                        <i class="ph ph-info text-2xl"></i>
+                    </div>
                     <div>
-                        <h4 class="font-medium text-brand-900 mb-1">Penting Diketahui</h4>
-                        <p class="text-sm text-brand-700/80">Harga "Start From" bergantung pada panjang dan ketebalan rambut. Silakan konsultasi via WhatsApp terlebih dahulu dengan mengirimkan foto kondisi rambutmu untuk mendapatkan estimasi harga pasti!</p>
+                        <h4 class="font-serif text-xl mb-1">Penting Diketahui</h4>
+                        <p class="text-sm text-white/80 max-w-2xl">Harga "mulai dari" bergantung pada panjang dan ketebalan rambut. Silakan chat WA dengan menyertakan foto kondisi rambut untuk estimasi harga pasti!</p>
                     </div>
                 </div>
-
+                <a href="#booking" class="bg-white text-brand-900 px-6 py-3 rounded-full text-sm font-semibold whitespace-nowrap hover:bg-brand-50 transition-colors">
+                    Tanya Admin
+                </a>
             </div>
+
         </div>
     </section>
 
-    <!-- Aesthetic Gallery -->
-    <section id="gallery" class="py-2 overflow-hidden bg-brand-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <!-- Aesthetic Gallery (Interactive Bento Grid) -->
+    <section id="gallery" class="py-20 overflow-hidden bg-brand-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="font-serif text-3xl md:text-4xl text-brand-900 mb-4">Lumière Moodboard</h2>
-                <p class="text-brand-700/80">Inspirasi hasil karya dan sudut aesthetic kami.</p>
+                <p class="text-brand-700/80">Inspirasi hasil karya dan sudut aesthetic kami. (Sentuh gambarnya!)</p>
             </div>
             
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-                <img src="https://i.pinimg.com/736x/29/d8/22/29d822c342079734fef388b8c477102f.jpg" alt="Hair Styling" class="w-full h-64 md:h-80 object-cover rounded-xl shadow-sm hover:opacity-90 transition-opacity cursor-pointer">
-                <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1000&auto=format&fit=crop" alt="Salon Interior" class="w-full h-64 md:h-80 object-cover rounded-xl shadow-sm hover:opacity-90 transition-opacity cursor-pointer mt-4 md:mt-8">
-                <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=1000&auto=format&fit=crop" alt="Hair Wash Area" class="w-full h-64 md:h-80 object-cover rounded-xl shadow-sm hover:opacity-90 transition-opacity cursor-pointer">
-                <img src="https://i.pinimg.com/736x/b2/e0/09/b2e009aa668f2703fe17d18fb7a31dc6.jpg" alt="Cozy Salon Chair" class="w-full h-64 md:h-80 object-cover rounded-xl shadow-sm hover:opacity-90 transition-opacity cursor-pointer mt-4 md:mt-8">
+            <!-- Bento Grid Layout -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[160px] md:auto-rows-[220px]">
+                
+                <!-- Img 1: Large (2x2) -->
+                <div class="col-span-2 row-span-2 group relative overflow-hidden rounded-2xl shadow-sm cursor-pointer">
+                    <img src="https://i.pinimg.com/736x/29/d8/22/29d822c342079734fef388b8c477102f.jpg" alt="Lumière Hair Styling" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out">
+                    <div class="absolute inset-0 bg-brand-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center">
+                        <i class="ph-fill ph-heart text-white text-5xl drop-shadow-md transform scale-50 group-hover:scale-100 transition-transform duration-300 mb-2"></i>
+                        <span class="text-white font-medium tracking-wide">Love this look</span>
+                    </div>
+                </div>
+
+                <!-- Img 2: Normal (1x1) -->
+                <div class="col-span-1 row-span-1 group relative overflow-hidden rounded-2xl shadow-sm cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1000&auto=format&fit=crop" alt="Salon Interior" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out">
+                    <div class="absolute inset-0 bg-brand-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="ph-fill ph-sparkle text-white text-4xl drop-shadow-md transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
+                    </div>
+                </div>
+
+                <!-- Img 3: Tall (1x2 Desktop, 1x1 Mobile) -->
+                <div class="col-span-1 row-span-1 md:row-span-2 group relative overflow-hidden rounded-2xl shadow-sm cursor-pointer">
+                    <img src="https://i.pinimg.com/736x/b2/e0/09/b2e009aa668f2703fe17d18fb7a31dc6.jpg" alt="Cozy Salon Chair" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out">
+                    <div class="absolute inset-0 bg-brand-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="ph-fill ph-camera text-white text-4xl drop-shadow-md transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
+                    </div>
+                </div>
+
+                <!-- Img 4: Normal (1x1) -->
+                <div class="col-span-1 row-span-1 group relative overflow-hidden rounded-2xl shadow-sm cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=1000&auto=format&fit=crop" alt="Hair Wash Area" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out">
+                    <div class="absolute inset-0 bg-brand-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="ph-fill ph-drop text-white text-4xl drop-shadow-md transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
+                    </div>
+                </div>
+
+                <!-- Img 5: Normal (1x1) -->
+                <div class="col-span-1 row-span-1 group relative overflow-hidden rounded-2xl shadow-sm cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1595476108010-b4d1f10d5e43?q=80&w=1000&auto=format&fit=crop" alt="Details" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out">
+                    <div class="absolute inset-0 bg-brand-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="ph-fill ph-star text-white text-4xl drop-shadow-md transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
+                    </div>
+                </div>
+
+                <!-- Img 6: Wide (2x1) -->
+                <div class="col-span-2 md:col-span-2 row-span-1 group relative overflow-hidden rounded-2xl shadow-sm cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1620331311520-246422fd82f9?q=80&w=1000&auto=format&fit=crop" alt="Balayage Result" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out" style="object-position: center 20%;">
+                    <div class="absolute inset-0 bg-brand-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="ph-fill ph-scissors text-white text-4xl drop-shadow-md transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
+                    </div>
+                </div>
+
+                <!-- Img 7: Wide on Mobile, Normal on Desktop -->
+                <div class="col-span-2 md:col-span-1 row-span-1 group relative overflow-hidden rounded-2xl shadow-sm cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1000&auto=format&fit=crop" alt="Styling" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out">
+                    <div class="absolute inset-0 bg-brand-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="ph-fill ph-magic-wand text-white text-4xl drop-shadow-md transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -361,7 +476,7 @@
             <p class="text-brand-100/80 text-lg mb-10 max-w-2xl mx-auto font-light">
                 Hindari antrian panjang. Reservasi jadwalmu sekarang, kirim referensi gaya rambut yang kamu mau, dan biarkan kami melakukan keajaiban.
             </p>
-            <a href="https://wa.me/628817631003" target="_blank" class="inline-flex items-center gap-3 bg-white text-brand-900 px-8 py-4 rounded-full font-semibold hover:bg-brand-100 hover:scale-105 transition-all duration-300 shadow-lg">
+            <a href="https://wa.me/6281234567890" target="_blank" class="inline-flex items-center gap-3 bg-white text-brand-900 px-8 py-4 rounded-full font-semibold hover:bg-brand-100 hover:scale-105 transition-all duration-300 shadow-lg">
                 <i class="ph-fill ph-whatsapp-logo text-2xl text-green-500"></i>
                 Booking via WhatsApp
             </a>
@@ -387,7 +502,7 @@
                     <ul class="space-y-3 text-sm text-brand-700/80">
                         <li class="flex gap-3">
                             <i class="ph ph-map-pin mt-0.5 text-brand-500"></i>
-                            <span>Jl. Karonsih Baru IV,128 Semarang, Jawa Tengah</span>
+                            <span>Jl. Aesthetic Selatan No. 88, Semarang, Jawa Tengah</span>
                         </li>
                         <li class="flex gap-3">
                             <i class="ph ph-clock mt-0.5 text-brand-500"></i>
